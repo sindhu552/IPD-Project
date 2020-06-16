@@ -1,0 +1,113 @@
+{
+  margin: 0;
+  padding: 0;
+}
+.sky{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #1FAAC9 ;
+  overflow-x: hidden;
+}
+p{
+  top:10px;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 1px solid black ;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-family: sans-serif , arial ;
+  z-index: 1;
+  text-decoration: underline;
+   text-transform: uppercase;
+  
+}
+.clouds{
+  position: absolute;
+  top:80px;
+  height: 150px;
+  right: 0;
+  left: -2000px;
+  width: 500%;
+  background-image: url(clouds.png);
+  background-repeat: repeat-x;
+  animation: clouds 20s linear infinite;
+}
+@keyframes clouds{
+  100%{
+    transform: translateX(1000px);
+  }
+}
+.mountains{
+  position: absolute;
+  bottom:0;
+  height: 250px;
+  right: 10;
+  left: -2000px;
+  width: 300%;
+   background-color: #FF4333;
+  background-image: url(mountains.png);
+  background-repeat: repeat x;
+  animation: mountains 5s linear infinite;
+}
+@keyframes mountains{
+  100%{
+    transform: translateX(1000px);
+  }
+}
+
+.airplane{
+  top: 150px;
+  left:0%;
+ position: absolute;
+  z-index: 1;
+  animation: airplane 4s linear infinite ;
+  transform: translateX(1000px);
+  opacity: 1;
+}
+@keyframes airplane{
+ 
+  100%{
+    transform: translateX(1000px);
+  }
+ 0%{
+    transform: translateY(1px);
+  }
+  50%{
+    transform: translateX(10px);
+  }
+}
+
+  
+.flame{
+  top: 165px;
+  left: 15px;
+  height: 10px;
+  width:60px;
+   
+ position: absolute;
+  border-radius: 50%;
+  background-color: black;
+  animation: flame 0.3s linear infinite;
+   z-index: -1;
+}
+.flame2{
+  top: 180px;
+  left: 20px;
+  position: absolute;
+  
+}
+@keyframes flame{
+  0%{
+    transform: translateX(100%);
+   
+  }
+  50%{
+    transform: translateX(50%);
+    
+  }
+  100%{
+    transform: translateX(100%);
+    
+  }
+}
